@@ -1,0 +1,643 @@
+/*
+*
+* Template Name: Sven
+* Description: Creative and Minimal Teaser Template
+* Authors: Sven Creations(svencreations@gmail.com)
+*
+*/
+
+/* ==================================================================
+* Table of Contents:
+*
+* 1.0 - Custom Font Declarations(if any)
+* 2.0 - Simple Fixes
+* 3.0 - Basic Styles
+* 4.0 - Coming Soon Scene Styles (.coming-soon class)
+*	    4.1 - Sven Timer(HH:MM:SS)
+* 5.0 - Subscription Modal
+* 6.0 - Sven Header / Sven Footer
+* 7.0 - Responsive Styles
+* 		7.1 - Small Devices, Tablets
+* 		7.2 - Medium Devices, Desktops
+* 		7.3 - Large Devices, Wide Screen
+
+================================================================== */
+
+/* ==================================================================
+1.0 Custom Font Declarations(if any)
+================================================================== */
+
+/* ==================================================================
+2.0 Simple Fixes
+================================================================== */
+
+/* Setting the body and html to full screen height */
+html, body {
+	height: 100%;
+	background: none #000;
+}
+
+/* Remove dotted borders around the links when clicked */
+a, a:active, a:focus, input:focus {
+	text-decoration: none !important;
+	outline: 0;
+}
+
+/* clearfix */
+.clear {
+	clear: both;
+}
+
+button:focus {
+	outline: 0;
+}
+
+::-webkit-input-placeholder {
+	color: rgba(255, 255, 255, 0.1);
+}
+
+:-moz-placeholder { /* Firefox 18- */
+	color: rgba(255, 255, 255, 0.1);
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+	color: rgba(255, 255, 255, 0.1);
+}
+
+:-ms-input-placeholder {
+	color: rgba(255, 255, 255, 0.1);
+}
+
+input {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	-webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius:  0 !important;
+}
+
+/* ==================================================================
+3.0 Basic Styles
+================================================================== */
+body {
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	background: none #000;
+	color: #ffffff;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px; /* Base Font size */
+}
+
+body.set-overflow {
+	overflow: visible;
+}
+
+.italic {
+	font-style: italic;
+}
+
+/****** H1(base element in our animations) *********/
+h1 {
+	margin: 0;
+	padding: 0;
+	font-size: 1.5em;
+	line-height: 1.1;
+	font-weight: normal;
+	text-decoration: none;
+	-webkit-text-stroke: 0.2px; /* to fix thin fonts rendering problems in iOS safari and android browsers. You can remove it or change the values */
+}
+
+.thin {
+	font-weight: 100;
+}
+
+/* ==================================================================
+4.0 Coming Soon Scene (.coming-soon class)
+================================================================== */
+.coming-soon .lt-main {
+	font-size: 1.75em;
+	font-weight: normal;
+}
+
+.coming-soon .lt-sub {
+	font-size: 1em; /* reset relative font size here */
+	font-weight: normal;
+}
+
+.coming-soon .lt-boxed {
+	background: none transparent !important;
+}
+
+.coming-soon .btn {
+    padding: 0.375em 1.5em;
+	border: 1px solid transparent;
+	-webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius:  0;
+	margin-top: 0.375em;
+    letter-spacing: 0.0875em;
+    background: none #ffba00;
+	color: #000;
+}
+
+.btn:hover, .btn:active, .btn:focus {
+	border-bottom: 2px solid #fff;
+}
+
+#buy-button {
+	border: 1px solid #c4b391;
+    background: none rgba(246, 227, 190, 0.3);
+	color: #fff3db;
+    font-weight: 400;
+	letter-spacing: 2px;
+}
+
+#buy-button:hover {
+    background: none transparent;
+    border: 1px solid #fff;
+    opacity: 1;
+}
+
+#buy-button i {
+    padding-right: 10px;
+}
+
+/*	4.1 - Sven Timer(HH:MM:SS)
+-------------------------------------------------------------- */
+.sven-timer {
+    font-family: "Lato", sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+/* ==================================================================
+5.0 Subscription Modal
+================================================================== */
+.row-md-table {
+    margin: 0;
+}
+
+/* Display table for vertical align middle */
+@media only screen and (min-width : 992px) {
+    .modal-dialog {
+        width: 700px;
+    }
+
+    .card-image {
+        display: block;
+    }
+
+    .row-md-table {
+        display: table;
+        width: 100%;
+        margin: 0;
+    }
+
+    .row-md-table > [class*="col-"] {
+        float: none;
+        display: table-cell;
+		padding: 0;
+        vertical-align: top;
+    }
+}
+
+/* Contact page*/
+.sven-modal .modal-content {
+	-webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+	color: #333;
+    font-family: 'Raleway', sans-serif;
+}
+
+.sven-modal .modal-body {
+    padding: 0;
+}
+
+.card-image {
+    background: url("../images/subscribe-image.jpg") no-repeat center center transparent;
+    display: none;
+}
+
+.sven-modal .content {
+    padding: 48px 24px;
+}
+
+.sven-modal h3 {
+    margin: 0px;
+    font-size: 26px;
+	font-weight: 600;
+    line-height: 48px;
+    text-decoration: none;
+}
+
+.sven-modal p {
+    margin-top: 12px;
+    margin-bottom: 24px;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+/* Sven Form Styling */
+.sven-form {
+    padding: 36px 0px 0px;
+}
+
+.sven-form .form-control {
+	width: 100%;
+    height: auto;
+	padding: 12px 24px;
+	border: 1px solid #ddd;
+    margin-bottom: 24px;
+    background: none #f7f7f7;
+	color: #000;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+    box-shadow: none;
+    outline: medium none;
+}
+
+.sven-form .form-control:focus {
+    border-color: #3DAD48;
+}
+
+.sven-form textarea.form-control {
+    min-height: 96px;
+}
+
+.sven-form .btn {
+	display: inline-block;
+	width: auto;
+	padding: 12px 36px;
+	border: none;
+    border-bottom: 4px solid rgba(25,31,52, 0.1);
+	margin: 0;
+    background: none #ff1f34;
+	color: #fff;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600;
+    outline: medium none !important;
+}
+
+.sven-form .btn:hover {
+    border-bottom: 4px solid rgba(25,31,52, 0.3);
+    color: #fff;
+}
+
+/* Form Error / Success Messages */
+p.sven-message {
+    position: relative;;
+    margin-bottom: 12px;
+    margin-left: 0px;
+    font-size: 14px;
+}
+
+.sven-message i {
+    margin-right: 12px;
+}
+
+.sven-message.error {
+    color: #ff0033;
+}
+
+.sven-message.success {
+    color: #3DAD48;
+}
+
+/* Close Modal button */
+.close-form {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0px 16px !important;
+    font-size: 36px;
+    line-height: 48px;
+}
+
+/* ==================================================================
+6.0 Sven Header / Sven Footer
+================================================================== */
+.sven-header, .sven-footer {
+    position: absolute;
+	z-index: 1;
+	top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 12px;
+}
+
+.sven-header {
+	padding-left: 18px;
+}
+
+.sven-footer {
+    top: auto;
+    bottom: 0;
+	display: none;
+}
+
+.sven-info {
+	font-family: 'Lato', sans-serif;
+}
+
+.sven-info > a {
+	color: #fff;
+	font-size: 12px;
+	font-weight: 300;
+	text-transform: uppercase;
+	line-height: 24px;
+	text-decoration: none;
+	vertical-align: middle;
+}
+
+.sven-info > * {
+	display: inline-block;
+}
+
+.sven-info.pull-left > * {
+	margin-right: 12px;
+}
+
+.sven-info.pull-right > * {
+	margin-left: 12px;
+}
+
+/* Social Icons */
+.social-icons {
+	padding: 2px 0px;
+	margin: 0px;
+	list-style: none;
+}
+
+.social-icons li {
+	display: inline-block;
+	margin: 0px;
+}
+
+/* Change icons size here */
+.social-icons li a {
+	padding: 0px 6px;
+	opacity: 0.9;
+	font-size: 14px;
+}
+
+.social-icons .fa {
+	background: none transparent;
+	color: #FFF;
+}
+
+.social-icons li a:hover, .social-icons li a:active {
+	opacity: 0.7;
+}
+
+/* Days Left */
+.days-left {
+    display: inline-block;
+    font-size: 12px;
+	font-weight: 300;
+    line-height: 24px;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+
+a.hashtag:hover {
+	opacity: 0.7;
+}
+
+/* Subscribe button on footer */
+.sven-info .btn {
+	position: relative;
+	overflow: hidden;
+    padding: 0 2px;
+	border: medium none;
+	-webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius:  0;
+    background: none transparent;
+	color: #fff;
+    letter-spacing: 1px;
+}
+
+.sven-info .btn:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: none #ff1f34;
+	-ms-transform: translateY(96%); /* IE 9 */
+    -webkit-transform: translateY(96%); /* Safari */
+    -moz-transform: translateY(96%); /* Firefox Older versions*/
+    -o-transform: translateY(96%); /* Opera */
+    transform: translateY(96%);
+	-webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    -o-transition: all 0.35s;
+    transition: all 0.35s;
+
+}
+
+.sven-info .btn:hover:after {
+	-ms-transform: translateY(0%); /* IE 9 */
+    -webkit-transform: translateY(0%); /* Safari */
+    -moz-transform: translateY(0%); /* Firefox Older versions*/
+    -o-transform: translateY(0%); /* Opera */
+    transform: translateY(0%);
+}
+
+/* ==================================================================
+7.0 Responsive
+================================================================== */
+
+/*	7.1 Small Devices, Tablets
+-------------------------------------------------------------- */
+@media only screen and (min-width : 768px) {
+	h1 {
+		-webkit-text-stroke: 0px;
+	}
+
+	.coming-soon .lt-main {
+		font-size: 2.75em;
+	}
+
+	.coming-soon .btn {
+		font-size: 0.875em;
+	}
+
+	.sven-header, .sven-footer {
+		padding: 12px 18px;
+	}
+
+	.sven-header {
+		padding-left: 27px;
+	}
+
+	.sven-info.pull-left > * {
+		margin-right: 18px;
+	}
+
+	.sven-info.pull-right > * {
+		margin-left: 18px;
+	}
+
+	.social-icons {
+		padding: 3px 0px;
+	}
+
+	.social-icons li a {
+		padding: 0px 9px;
+		font-size: 16px;
+	}
+
+	.days-left {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+	.sven-info > a {
+		font-size: 14px;
+        font-weight: 400;
+		line-height: 28px;
+	}
+
+	.sven-info .btn {
+		padding: 0px 4px;
+	}
+
+	.sven-timer {
+        font-size: 38px;
+        letter-spacing: 2px;
+    }
+}
+
+/*	7.2 Medium Devices, Desktops, Laptops
+-------------------------------------------------------------- */
+@media only screen and (min-width : 1224px) {
+	h1 {
+		-webkit-text-stroke: 0px;
+	}
+
+	.coming-soon .lt-main {
+		font-size: 3.75em;
+	}
+
+	.coming-soon .btn {
+		font-size: 1.125em;
+	}
+
+	.sven-header, .sven-footer {
+		padding: 14px 20px;
+	}
+
+	.sven-header {
+		padding-left: 30px;
+	}
+
+	.sven-info.pull-left > * {
+		margin-right: 20px;
+	}
+
+	.sven-info.pull-right > * {
+		margin-left: 20px;
+	}
+
+	.social-icons {
+		padding: 4px 0px;
+	}
+
+	.social-icons li a {
+		padding: 0px 10px;
+		font-size: 18px;
+	}
+
+	.days-left {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+	.sven-info > a {
+		font-size: 16px;
+        font-weight: 400;
+		line-height: 34px;
+	}
+
+	.sven-info .btn {
+		padding: 0px 6px;
+	}
+
+	.sven-timer {
+        font-size: 48px;
+        letter-spacing: 3px;
+    }
+}
+
+
+/*	7.3 Large Devices, Wide Screens
+-------------------------------------------------------------- */
+@media only screen and (min-width : 1824px) {
+	h1 {
+		-webkit-text-stroke: 0px;
+	}
+
+	.coming-soon .lt-main {
+		font-size: 5em;
+	}
+
+	.coming-soon .btn {
+		font-size: 1.5em;
+	}
+
+	.sven-header, .sven-footer {
+		padding: 16px 24px;
+	}
+
+	.sven-header {
+		padding-left: 36px;
+	}
+
+	.sven-info.pull-left > * {
+		margin-right: 24px;
+	}
+
+	.sven-info.pull-right > * {
+		margin-left: 24px;
+	}
+
+	.social-icons {
+		padding: 4px 0px;
+	}
+
+	.social-icons li a {
+		padding: 0px 12px;
+		font-size: 20px;
+	}
+
+	.days-left {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+	.sven-info > a {
+		font-size: 18px;
+        font-weight: 400;
+		line-height: 36px;
+	}
+
+	.sven-info .btn {
+		padding: 0px 6px;
+	}
+
+	.sven-timer {
+        font-size: 64px;
+        letter-spacing: 4px;
+    }
+}

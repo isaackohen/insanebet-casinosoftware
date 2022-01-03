@@ -1,0 +1,100 @@
+/* ==================================================================
+Template Specific Styles (Custom CSS here)
+================================================================== */
+
+/*	Christmas Greeting(Youtube Video) with personalize option
+-------------------------------------------------------------- */
+body {
+    font-family: 'Amatica SC', cursive;
+}
+
+.sven-slide {
+    font-size: 1.25em;
+}
+
+.lt-main {
+    font-weight: 700;
+}
+
+.lt-boxed {
+    background: transparent !important;
+}
+
+.sven-form .btn,    /* "get notified" button Color */
+.sk-three-bounce .sk-child, .sk-spinner-pulse, .sk-double-bounce .sk-child, /* Preloader Color */
+.video-play-button:before, .video-play-button:after, /* "GO" button color */
+.coming-soon .btn, /* "Subscribe" button on lt-sub */
+.sven-info .btn:after /* "Subscribe" button on footer */
+{
+    background: #ED1C24 !important;
+}
+
+/* Set Video Overlay */
+/*.YTPOverlay {
+    background: none #0c182c;
+    opacity: 0.6;
+}*/
+
+/* Set Preloader Background*/
+/*.loader-container {
+    background: none #0c182c;
+}*/
+
+/* Subscribe button border and background */
+.coming-soon .btn {
+	color: #fff;
+    font-weight: 700;
+}
+
+.sven-info, .sven-timer, .sven-header, .sven-footer {
+    font-family: 'Amatica SC', cursive;
+    font-weight: 700;
+}
+
+.sven-info > a {
+    font-weight: 700 !important;
+}
+
+.coming-soon .lt-main {
+    font-weight: 700;
+}
+
+.lt-sub{
+	color: #fff;
+}
+
+p.sven-message {
+    display: inline-block;
+    font-weight: 600;
+    color: #fff;
+    background: #7fa552;
+    padding: 5px 20px;
+}
+
+.coming-soon .btn {
+    margin-top: 1.125em;
+}
+
+.card-image {
+    background: url("../../images/christmas-image.jpg") no-repeat center center transparent;
+}
+
+/* ==================================================================
+Responsive styles
+================================================================== */
+
+/* Small Devices, Tablets
+-------------------------------------------------------------- */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops, Laptops
+-------------------------------------------------------------- */
+@media only screen and (min-width : 1224px) {
+}
+
+/* Large Devices, Wide Screens
+-------------------------------------------------------------- */
+@media only screen and (min-width : 1824px) {
+}

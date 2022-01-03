@@ -1,0 +1,24 @@
+//
+// reboot.scss
+//
+body {
+    &.loading {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+// Forms
+label {
+    font-weight: $font-weight-bold;
+}
+
+
+button:focus {
+    outline: none;
+}
+
+
+.row >* {
+    position: relative;
+}

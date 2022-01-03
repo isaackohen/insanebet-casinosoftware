@@ -1,0 +1,993 @@
+/*
+*
+* Template Name: Sven Teaser Plugin styles
+* @version: 5.0 (18-07-2016)
+* Description: Styles associated with the Sven Teaser plugin
+* Authors: Sven Creations(svencreations@gmail.com)
+*
+*/
+
+/* ==================================================================
+* Table of Contents:
+*
+* 1.0 - Common Declarations and Fixes
+* 2.0 - Sven Layout Styles
+* 		2.1 - Wrapper
+* 		2.2 - Transition elements
+* 		2.3 - Slide element styles
+*       2.4 - Video Element
+*       2.5 - Splash Image / Splash Page
+* 		2.6 - Animation Text Position presets
+* 		2.7 - Player Controls
+* 		2.8 - Preloader Styles
+* 		2.9 - Animation Summary Box
+*       2.10 - Particles JS
+*       2.11 - Pulsating play button
+* 3.0 - Text Placeholders Basic Styles
+* 		3.1 - Main Text and Sub Text Styles and Positions(General)
+*		3.2 - BigText styles(General)
+*       3.3 - Better animation performance on browsers(Especially firefox)
+* 4.0 - Responsive Styles
+* 		4.1 - Small Devices, Tablets
+* 		4.2 - Medium Devices, Desktops
+* 		4.3 - Large Devices, Wide Screen
+
+================================================================== */
+
+/* ==================================================================
+1.0 Common Declarations and Fixes
+================================================================== */
+.abs-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%); /* IE 9 */
+    -webkit-transform: translate(-50%,-50%); /* Safari */
+    -moz-transform: translate(-50%,-50%); /* Firefox Older versions*/
+    -o-transform: translate(-50%,-50%); /* Opera */
+    transform: translate(-50%,-50%);
+}
+
+.abs-fs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background: none transparent;
+}
+
+.bg-cover {
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.gpu-hack {
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    perspective: 1000px;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+/* ==================================================================
+2.0 Sven Layout Styles
+================================================================== */
+
+/*	2.1 Wrapper
+-------------------------------------------------------------- */
+.sven-wrapper {
+    z-index: 0;
+}
+
+.sven-wrapper, .sven-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.sven-container {
+    z-index: 2;
+}
+
+/*	2.2 Transition elements
+-------------------------------------------------------------- */
+.black-bg {
+    z-index: 4;
+    opacity: 0;
+    visibility: hidden;
+    background: none #000;
+}
+
+.color-wrapper {
+    z-index: -2;
+}
+
+/*	2.3 Slide element styles
+-------------------------------------------------------------- */
+.sven-slide {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+}
+
+.sven-scene {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.sven-scene:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    margin-right: -0.25em;
+    vertical-align: middle;
+}
+
+.centered {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    max-width: 80%;
+    vertical-align: middle;
+}
+
+.halign-left {
+    text-align: left;
+}
+
+.halign-right {
+    text-align: right;
+}
+
+.halign-center {
+    text-align: center;
+}
+
+.content-container {
+    position: relative;
+    visibility: hidden;
+    white-space: normal;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+/* Overwrites imgcovereffect plugin's style position: relative */
+.single-image, .scene-image {
+    position: absolute !important;
+}
+
+.scene-image > * {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    perspective: 1000px;
+    outline: 1px solid transparent;
+}
+
+.slideshow-wrapper {
+    z-index: 0;
+}
+
+/*	2.4 Video Element
+-------------------------------------------------------------- */
+.video-wrapper {
+    z-index: -1;
+}
+
+.YTPOverlay, .bv-overlay {
+    opacity: 0.3;
+    background: none #000;
+}
+
+.preview-image {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#big-video-wrap {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.mbYTP_wrapper {
+    opacity: 0;
+    -webkit-transition: opacity 2s !important;
+    -moz-transition: opacity 2s !important;
+    -o-transition: opacity 2s !important;
+    transition: opacity 2s !important;
+}
+
+/*	2.5 Splash Image / Splash Page
+-------------------------------------------------------------- */
+.splash-wrapper {
+    z-index: 5;
+}
+
+.splash-page {
+    display: none;
+}
+
+/*	2.6 Animation Text Position presets
+-------------------------------------------------------------- */
+.right-bottom, .bottom-right {
+    right: 2%;
+    bottom: 7%;
+    vertical-align: bottom;
+}
+
+.right-top, .top-right {
+    right: 2%;
+    top: 7%;
+    vertical-align: top;
+}
+
+.right-center, .center-right {
+    right: 2%;
+    vertical-align: middle;
+}
+
+.left-top, .top-left {
+    left: 2%;
+    top: 7%;
+    vertical-align: top;
+}
+
+.left-bottom, .bottom-left {
+    left: 2%;
+    bottom: 7%;
+    vertical-align: bottom;
+}
+
+.left-center, .center-left {
+    left: 2%;
+    vertical-align: middle;
+}
+
+.center-top, .top-center {
+    top: 7%;
+    vertical-align: top;
+}
+
+.center-bottom, .bottom-center {
+    bottom: 7%;
+    vertical-align: bottom;
+}
+
+.place-left {
+    top: 0;
+    left: 0;
+    right: auto !important;
+    text-align: left;
+}
+
+.place-right {
+    top: 0;
+    right: 0;
+    left: auto !important;
+    text-align: right;
+}
+
+.place-center {
+    top: 0;
+    left: 0 !important;
+    right: 0 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center;
+}
+
+/*	2.7 Player Controls
+-------------------------------------------------------------- */
+.controls-nav {
+    position: relative;
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    visibility: hidden;
+    -ms-transform: scale(0.75); /* IE 9 */
+    -webkit-transform: scale(0.75); /* Safari */
+    -moz-transform: scale(0.75); /* Firefox Older versions*/
+    -o-transform: scale(0.75); /* Opera */
+    transform: scale(0.75);
+    -ms-transform-origin: right center;
+    -webkit-transform-origin: right center;
+    -moz-transform-origin: right center;
+    -o-transform-origin: right center;
+    transform-origin: right center;
+}
+
+.controls-nav a {
+    float: left;
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin: 0px 1px;
+    opacity: 0.6;
+    background: none transparent;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+
+.controls-nav a i{
+    display: block;
+    width: 32px;
+    height: 32px;
+    font-size: 1em;
+    line-height: 32px;
+}
+
+a.speed-label {
+    min-width: 32px;
+    width: auto;
+    height: auto;
+}
+
+.speed-label span {
+    display: inline-block;
+    height: 32px;
+    line-height: 32px;
+    vertical-align: middle;
+    color: #fff;
+}
+
+a.skip-button {
+    min-width: 32px;
+    width: auto;
+    margin-left: 5px;
+}
+
+a.skip-button i {
+    display: inline-block;
+    width: auto;
+    padding: 0px 2px;
+}
+
+/*	2.8 Preloader Styles
+-------------------------------------------------------------- */
+.build-details {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    z-index: 10;
+    padding: 8px 12px 5px 15px;
+    border-top-left-radius: 5px;
+    font-size: 8px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background: none #2B3242 !important;
+    color: #fff !important;
+    opacity: 1;
+    background: none
+}
+
+.build-details span {
+    display: inline-block;
+    padding-left: 3px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: normal;
+    vertical-align: baseline;
+}
+
+.loader-container {
+    position: absolute;
+    z-index: 6;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background: none #000;
+}
+
+.loader-ie9 .loader-container .abs-center > div:after {
+    content: 'LOADING';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    -ms-transform: translateX(-50%); /* IE 9 */
+    -webkit-transform: translateX(-50%); /* Safari */
+    -moz-transform: translateX(-50%); /* Firefox Older versions*/
+    -o-transform: translateX(-50%); /* Opera */
+    transform: translateX(-50%);
+}
+
+/* Double Bounce */
+.sk-double-bounce {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin: 0px auto;
+}
+.sk-double-bounce .sk-child {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #333;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-animation: sk-doubleBounce 2s infinite ease-in-out;
+    animation: sk-doubleBounce 2s infinite ease-in-out;
+}
+.sk-double-bounce .sk-double-bounce2 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-doubleBounce {
+    0%, 100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    50% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.sk-three-bounce {
+    -ms-transform: scale(0.75); /* IE 9 */
+    -webkit-transform: scale(0.75); /* Safari */
+    -moz-transform: scale(0.75); /* Firefox Older versions*/
+    -o-transform: scale(0.75); /* Opera */
+    transform: scale(0.75);
+}
+
+@keyframes sk-doubleBounce {
+    0%, 100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    50% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+/* Pulsating Circle */
+.sk-spinner-pulse {
+    width: 40px;
+    height: 40px;
+    margin: 0px auto;
+    background-color: #333;
+    border-radius: 100%;
+    -webkit-animation: sk-pulseScaleOut 1s infinite ease-in-out;
+    animation: sk-pulseScaleOut 1s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-pulseScaleOut {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+@keyframes sk-pulseScaleOut {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+/* Three Bounce */
+.sk-three-bounce {
+    margin: 0px auto;
+    width: 80px;
+    text-align: center;
+}
+
+.sk-three-bounce .sk-child {
+    width: 20px;
+    height: 20px;
+    background-color: #333;
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: sk-three-bounce 1.4s ease-in-out 0s infinite both;
+    animation: sk-three-bounce 1.4s ease-in-out 0s infinite both;
+}
+
+.sk-three-bounce .sk-bounce1 {
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+}
+
+.sk-three-bounce .sk-bounce2 {
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-three-bounce {
+    0%, 80%, 100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    40% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes sk-three-bounce {
+    0%, 80%, 100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    40% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+/*	2.9 Animation Summary Box
+-------------------------------------------------------------- */
+#summary-handle, #summary-container {
+    -webkit-transition: left 0.4s;
+    -moz-transition: left 0.4s;
+    -o-transition: left 0.4s;
+    transition: left 0.4s;
+    display: none;
+}
+
+#summary-handle {
+    position: fixed;
+    z-index: 999;
+    top: 200px;
+    width:40px;
+    height: 40px;
+    border: 1px solid #f1f1f1;
+    -webkit-border-radius: 0px 3px 3px 0px;
+    -moz-border-radius: 0px 3px 3px 0px;
+    border-radius:  0px 3px 3px 0px;
+    background: none #fff;
+    line-height:40px;
+    text-align:center;
+    cursor: pointer;
+}
+
+#summary-handle {
+    left: -5px;
+}
+
+#summary-handle.active {
+    left:220px;
+}
+
+#summary-handle i {
+    display: block;
+    width: 40px;
+    height: 40px;
+    color: #60d8ff;
+    font-size: 1.25em;
+    line-height: 40px;
+}
+
+#summary-container {
+    position: fixed;
+    z-index: 998;
+    top: 160px;
+    width: 220px;
+    min-height: 200px;
+    height: auto !important;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    background: none #fff;
+    color: #555;
+    text-align: left;
+    -webkit-border-radius: 0px 3px 3px 0px;
+    -moz-border-radius: 0px 3px 3px 0px;
+    border-radius:  0px 3px 3px 0px;
+}
+
+#summary-container {
+    left:-225px;
+}
+
+#summary-handle.active + #summary-container {
+    left: 0px;
+}
+
+#summary-container p {
+    line-height: 1.5;
+}
+
+#summary-container .animation-name {
+    text-decoration: underline;
+}
+
+#summary-container .details {
+    padding: 10px;
+    margin: 0 auto;
+}
+
+/*	2.10 Particles JS
+-------------------------------------------------------------- */
+#particles-js {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+/*	2.11 Pulsating play button
+-------------------------------------------------------------- */
+.video-play-button {
+    z-index: 6;
+    display: block;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    width: 80px;
+    height: 80px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius:  50%;
+    text-align: center;
+    cursor: pointer;
+    -ms-transform: scale(0.65); /* IE 9 */
+    -webkit-transform: scale(0.65); /* Safari */
+    -moz-transform: scale(0.65); /* Firefox Older versions*/
+    -o-transform: scale(0.65); /* Opera */
+    transform: scale(0.65);
+}
+
+.video-play-button:before, .video-play-button:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 80px;
+    height: 80px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius:  50%;
+    -ms-transform: translateX(-50%) translateY(-50%); /* IE 9 */
+    -webkit-transform: translateX(-50%) translateY(-50%); /* Safari */
+    -moz-transform: translateX(-50%) translateY(-50%); /* Firefox Older versions*/
+    -o-transform: translateX(-50%) translateY(-50%); /* Opera */
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.video-play-button:before {
+    z-index: 0;
+    background: #ba1f24;
+    -webkit-animation: pulse-border 1500ms ease-out infinite;
+    -moz-animation: pulse-border 1500ms ease-out infinite;
+    -o-animation: pulse-border 1500ms ease-out infinite;
+    animation: pulse-border 1500ms ease-out infinite;
+}
+
+.video-play-button:after {
+    z-index: 1;
+    background: #fa183d;
+    -webkit-transition: all 200ms;
+    -moz-transition: all 200ms;
+    -o-transition: all 200ms;
+    transition: all 200ms;
+}
+
+.video-play-button:hover:after {
+    opacity: 0.8;
+}
+
+.video-play-button img {
+    position: relative;
+    z-index: 3;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+.video-play-button span {
+    position: relative;
+    z-index: 3;
+    top: 50%;
+    display: block;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    -ms-transform: translateY(-50%); /* IE 9 */
+    -webkit-transform: translateY(-50%); /* Safari */
+    -moz-transform: translateY(-50%); /* Firefox Older versions*/
+    -o-transform: translateY(-50%); /* Opera */
+    transform: translateY(-50%);
+}
+
+@-webkit-keyframes pulse-border {
+    0% {
+        -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes pulse-border {
+    0% {
+        -moz-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        -moz-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+        opacity: 0;
+    }
+}
+
+@-o-keyframes pulse-border {
+    0% {
+        -o-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        -o-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+        opacity: 0;
+    }
+}
+
+@keyframes pulse-border {
+    0% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+        opacity: 0;
+    }
+}
+
+
+/* ==================================================================
+3.0 Text Placeholders Basic Styles
+================================================================== */
+
+/*	3.1 Main Text and Sub Text Styles and Positions(General)
+-------------------------------------------------------------- */
+.lt-main {
+    font-size: 1.25em;
+    font-weight: 100;
+}
+
+.lt-sub {
+    position: relative;
+    z-index: 1;
+    padding: 4px;
+    color: #000;
+    font-size: 0.875em;
+    font-weight: 300;
+}
+
+.lt-boxed {
+    background: none #60d8ff;
+}
+
+/*	3.2 BigText styles(General)
+-------------------------------------------------------------- */
+.bt-container {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.12;
+}
+
+.bt-wrapper {
+    position: relative;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.bt-container h1 {
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+/*	3.3 Better animation performance on browsers(Especially firefox)
+---------------------------------------------------------------------- */
+div[class^="sven-char"] {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    perspective: 1000px;
+    outline: 1px solid transparent;
+}
+
+/* The fix for Firefox */
+.blur-reveal-lt div[class^="sven-char"] {
+    filter: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><filter id="gaussian_blur"><feGaussianBlur in="SourceGraphic" stdDeviation="0" /></filter></defs></svg>#gaussian_blur');
+}
+
+/* ==================================================================
+4.0 Responsive
+================================================================== */
+
+/*	4.1 Small Devices, Tablets
+-------------------------------------------------------------- */
+@media only screen and (min-width : 768px) {
+    .lt-main {
+        font-size: 2.5em;
+    }
+
+    .lt-sub {
+        font-size: 1.125em;
+    }
+
+    #summary-handle, #summary-container {
+        display: block;
+    }
+
+    .loader {
+        font-size: 0.875em;
+    }
+
+    .controls-nav {
+        -ms-transform: scale(0.8); /* IE 9 */
+        -webkit-transform: scale(0.8); /* Safari */
+        -moz-transform: scale(0.8); /* Firefox Older versions*/
+        -o-transform: scale(0.8); /* Opera */
+        transform: scale(0.8);
+    }
+
+    .video-play-button {
+        -ms-transform: scale(0.75); /* IE 9 */
+        -webkit-transform: scale(0.75); /* Safari */
+        -moz-transform: scale(0.75); /* Firefox Older versions*/
+        -o-transform: scale(0.75); /* Opera */
+        transform: scale(0.75);
+    }
+
+    .sk-three-bounce {
+        -ms-transform: scale(0.8); /* IE 9 */
+        -webkit-transform: scale(0.8); /* Safari */
+        -moz-transform: scale(0.8); /* Firefox Older versions*/
+        -o-transform: scale(0.8); /* Opera */
+        transform: scale(0.8);
+    }
+}
+
+/*	4.2 Medium Devices, Desktops, Laptops
+-------------------------------------------------------------- */
+@media only screen and (min-width : 1224px) {
+    .lt-main {
+        font-size: 3.75em;
+    }
+
+    .lt-sub {
+        font-size: 1.5em;
+    }
+
+    #summary-handle, #summary-container {
+        display: block;
+    }
+
+    .loader {
+        font-size: 0.938em;
+    }
+
+    .controls-nav {
+        -ms-transform: scale(0.9); /* IE 9 */
+        -webkit-transform: scale(0.9); /* Safari */
+        -moz-transform: scale(0.9); /* Firefox Older versions*/
+        -o-transform: scale(0.9); /* Opera */
+        transform: scale(0.9);
+    }
+
+    .video-play-button {
+        -ms-transform: scale(0.85); /* IE 9 */
+        -webkit-transform: scale(0.85); /* Safari */
+        -moz-transform: scale(0.85); /* Firefox Older versions*/
+        -o-transform: scale(0.85); /* Opera */
+        transform: scale(0.85);
+    }
+
+    .sk-three-bounce {
+        -ms-transform: scale(0.9); /* IE 9 */
+        -webkit-transform: scale(0.9); /* Safari */
+        -moz-transform: scale(0.9); /* Firefox Older versions*/
+        -o-transform: scale(0.9); /* Opera */
+        transform: scale(0.9);
+    }
+
+    .build-details {
+        font-size: 10px;
+    }
+
+    .build-details span {
+        font-size: 14px;
+    }
+}
+
+
+/*	4.3 Large Devices, Wide Screens
+-------------------------------------------------------------- */
+@media only screen and (min-width : 1824px) {
+    .lt-main {
+        font-size: 5em;
+    }
+
+    .lt-sub {
+        font-size: 2em;
+    }
+
+    #summary-handle, #summary-container {
+        display: block;
+    }
+
+    .loader {
+        font-size: 1em;
+    }
+
+    .controls-nav {
+        -ms-transform: scale(1); /* IE 9 */
+        -webkit-transform: scale(1); /* Safari */
+        -moz-transform: scale(1); /* Firefox Older versions*/
+        -o-transform: scale(1); /* Opera */
+        transform: scale(1);
+    }
+
+    .video-play-button {
+        -ms-transform: scale(1); /* IE 9 */
+        -webkit-transform: scale(1); /* Safari */
+        -moz-transform: scale(1); /* Firefox Older versions*/
+        -o-transform: scale(1); /* Opera */
+        transform: scale(1);
+    }
+
+    .sk-three-bounce {
+        -ms-transform: scale(1); /* IE 9 */
+        -webkit-transform: scale(1); /* Safari */
+        -moz-transform: scale(1); /* Firefox Older versions*/
+        -o-transform: scale(1); /* Opera */
+        transform: scale(1);
+    }
+}

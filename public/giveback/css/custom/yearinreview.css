@@ -1,0 +1,97 @@
+/* ==================================================================
+Template Specific Styles (Custom CSS here)
+================================================================== */
+
+/*	Year In Review(Mixed / Assorted)
+-------------------------------------------------------------- */
+#yearinreview {
+    text-transform: uppercase;
+}
+
+#yearinreview h1 {
+    -webkit-text-stroke: 0px;
+}
+
+/* Main Text */
+#yearinreview .lt-main {
+    font-weight: 300;
+}
+
+/* Sub Text */
+#yearinreview .lt-sub {
+    color: #fff;
+}
+
+/* Coming Soon Scene */
+#yearinreview .coming-soon .lt-main {
+    font-size: 2.875em;
+    font-weight: 700;
+}
+
+#yearinreview .coming-soon .lt-sub {
+    font-size: 1.125em;
+}
+
+#yearinreview .coming-soon h1 {
+    line-height: 1.2;
+}
+
+/* align text to baseline */
+#yearinreview .coming-soon div[class^="sven-char-"]::after {
+    content: "";
+    height: 100%;
+    display: inline-block;
+}
+
+.sk-three-bounce .sk-child, .sk-spinner-pulse, .sk-double-bounce .sk-child, /* Preloader Color */
+.video-play-button:before, .video-play-button:after /* "GO" button color */
+{
+    background: none #ff1f34;
+}
+
+
+/* ==================================================================
+Responsive styles
+================================================================== */
+
+/* Small Devices, Tablets
+-------------------------------------------------------------- */
+@media only screen and (min-width : 768px) {
+
+    #yearinreview .coming-soon .lt-main {
+        font-size: 6.875em;
+    }
+
+    #yearinreview .coming-soon .lt-sub {
+        font-size: 2.625em;
+    }
+
+}
+
+/* Medium Devices, Desktops, Laptops
+-------------------------------------------------------------- */
+@media only screen and (min-width : 1224px) {
+
+    #yearinreview .coming-soon .lt-main {
+        font-size: 9em;
+    }
+
+    #yearinreview .coming-soon .lt-sub {
+        font-size: 3.125em;
+    }
+
+}
+
+/* Large Devices, Wide Screens
+-------------------------------------------------------------- */
+@media only screen and (min-width : 1824px) {
+
+    #yearinreview .coming-soon .lt-main {
+        font-size: 11.625em;
+    }
+
+    #yearinreview .coming-soon .lt-sub {
+        font-size: 3.875em;
+    }
+
+}

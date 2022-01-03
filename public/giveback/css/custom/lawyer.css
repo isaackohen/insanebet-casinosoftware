@@ -1,0 +1,164 @@
+/* ==================================================================
+Template Specific Styles (Custom CSS here)
+================================================================== */
+
+/*	 Independent Lawyer(Slide Show Variant w/ Transitions)
+-------------------------------------------------------------- */
+body {
+    font-family: 'Gurajada', serif;
+}
+
+/* Adjust default position */
+.left-center, .center-left {
+    left: 4%;
+}
+
+/* Remove text stroke(as Gurajada is a bold font) */
+#lawyer h1 {
+    -webkit-text-stroke: 0px;
+}
+
+#lawyer .lt-boxed, /* Sub Text Background Box Color */
+.sven-form .btn,    /* "get notified" button Color */
+.sk-three-bounce .sk-child, .sk-spinner-pulse, .sk-double-bounce .sk-child, /* Preloader Color */
+.video-play-button:before, .video-play-button:after, /* "GO" button color */
+.coming-soon .btn, /* "Subscribe" button on lt-sub */
+.sven-info .btn:after /* "Subscribe" button on footer */
+{
+    background: none #ff1f34;
+}
+
+/* Main Text */
+.lt-main {
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Coming Soon Text */
+#scene-5 .lt-main {
+    font-size: 52px;
+    letter-spacing: normal;
+}
+
+/* Gradient Background for scene-7 */
+.scene-7 .noimage {
+    width: 100%;
+    height: 100%;
+    background: rgba(25,12,2,1);
+    background: -moz-linear-gradient(left, rgba(25,12,2,1) 0%, rgba(1,5,14,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(25,12,2,1)), color-stop(100%, rgba(1,5,14,1)));
+    background: -webkit-linear-gradient(left, rgba(25,12,2,1) 0%, rgba(1,5,14,1) 100%);
+    background: -o-linear-gradient(left, rgba(25,12,2,1) 0%, rgba(1,5,14,1) 100%);
+    background: -ms-linear-gradient(left, rgba(25,12,2,1) 0%, rgba(1,5,14,1) 100%);
+    background: linear-gradient(to right, rgba(25,12,2,1) 0%, rgba(1,5,14,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#190c02', endColorstr='#01050e', GradientType=1 );
+}
+
+/* LinkedIn Button styling */
+.linkedin-button .fa {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #fff;
+    margin-top: 8px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.linkedin-button .fa:hover {
+    opacity: 0.8;
+}
+
+.logo-container img {
+    margin-top: 8px;
+    height: 12px;
+}
+
+.controls-nav {
+    -ms-transform: scale(1); /* IE 9 */
+    -webkit-transform: scale(1); /* Safari */
+    -moz-transform: scale(1); /* Firefox Older versions*/
+    -o-transform: scale(1); /* Opera */
+    transform: scale(1);
+}
+
+.coming-soon .btn {
+    color: #fff;
+    margin-top: 0;
+}
+/* ==================================================================
+Responsive styles
+================================================================== */
+
+/* Small Devices, Tablets
+-------------------------------------------------------------- */
+@media only screen and (min-width : 768px) {
+    .lt-main {
+        font-size: 26px;
+        letter-spacing: 2px;
+    }
+
+    #scene-5 .lt-main {
+        font-size: 68px;
+    }
+
+    .linkedin-button .fa {
+        width: 28px;
+        height: 28px;
+        margin-top: 10px;
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .logo-container img {
+        height: 12px;
+    }
+}
+
+/* Medium Devices, Desktops, Laptops
+-------------------------------------------------------------- */
+@media only screen and (min-width : 1224px) {
+    .lt-main {
+        font-size: 32px;
+        letter-spacing: 3px;
+    }
+
+    #scene-5 .lt-main {
+        font-size: 84px;
+    }
+
+    .linkedin-button .fa {
+        width: 36px;
+        height: 36px;
+        margin-top: 12px;
+        font-size: 22px;
+        line-height: 36px;
+    }
+
+    .logo-container img {
+        height: 15px;
+    }
+}
+
+/* Large Devices, Wide Screens
+-------------------------------------------------------------- */
+@media only screen and (min-width : 1824px) {
+    .lt-main {
+        font-size: 42px;
+        letter-spacing: 4px;
+    }
+
+    #scene-5 .lt-main {
+        font-size: 112px;
+    }
+
+    .linkedin-button .fa {
+        width: 48px;
+        height: 48px;
+        margin-top: 16px;
+        font-size: 26px;
+        line-height: 48px;
+    }
+}

@@ -1,0 +1,111 @@
+/* ==================================================================
+Template Specific Styles (Custom CSS here)
+================================================================== */
+
+/* Mobile App Promo(Animating Colors)
+-------------------------------------------------------------- */
+
+/* Set Font Family to teaser */
+body {
+    font-family: 'Dosis', sans-serif;
+}
+
+#mobileapp {
+    background: none transparent;
+    text-transform: uppercase;
+}
+
+#mobileapp h1 {
+    -webkit-text-stroke: 0px;
+}
+
+/* Main Text */
+#mobileapp .lt-main {
+    font-weight: 700;
+    font-size: 1.75em;
+}
+
+/* Sub Text */
+#mobileapp .lt-sub {
+    color: #fff;
+}
+
+/* Sub Text Background Box Color */
+#mobileapp .lt-boxed {
+    background: none transparent;
+}
+
+#mobileapp .img-responsive {
+    width: 92px;
+}
+
+/* Set Preloader Background*/
+.loader-container {
+    background: none #E7464F;
+}
+
+.sk-three-bounce .sk-child, .sk-spinner-pulse, .sk-double-bounce .sk-child, /* Preloader Color */
+.video-play-button:before, .video-play-button:after, /* "GO" button color */
+.sven-info .btn:after /* "Subscribe" button on footer */
+{
+    background: none #fff;
+}
+
+.video-play-button span {
+    color: #E7464F;
+}
+
+.sven-info, .sven-timer {
+    font-family: 'Dosis', sans-serif;
+}
+
+.sven-info .btn:hover {
+    color: #E7464F;
+}
+
+
+/* ==================================================================
+Responsive styles
+================================================================== */
+
+/* Small Devices, Tablets
+-------------------------------------------------------------- */
+@media only screen and (min-width : 768px) {
+
+    #mobileapp .lt-main {
+        font-size: 2.75em;
+    }
+
+    #mobileapp .img-responsive {
+        width: 110px;
+    }
+
+}
+
+/* Medium Devices, Desktops, Laptops
+-------------------------------------------------------------- */
+@media only screen and (min-width : 1224px) {
+
+    #mobileapp .lt-main {
+        font-size: 3.75em;
+    }
+
+    #mobileapp .img-responsive {
+        width: 138px; /* 75% of original image dimension */
+    }
+
+}
+
+/* Large Devices, Wide Screens
+-------------------------------------------------------------- */
+@media only screen and (min-width : 1824px) {
+
+    #mobileapp .lt-main {
+        font-size: 5em;
+    }
+
+    #mobileapp .img-responsive {
+        width: 183px;
+    }
+
+}

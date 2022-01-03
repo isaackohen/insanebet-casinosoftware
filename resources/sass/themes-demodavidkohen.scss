@@ -1,0 +1,194 @@
+$themes: (
+    default: (
+        name: 'light',
+        header: darken(white, 2.5%),
+        header-top-bg: #382f59,
+        header-top-color: #f1f1f1,
+        logo: url('https://games.cdn4.dk/davidkohen_meta/preloader_logo_svg.svg?h=50&w=500'),
+
+        /* Main Theme Accent Colors */
+        secondary: #fe2977,
+        secondary-alternative: #fe2977,
+
+        /* Backgrounds for Tables/Containers */
+        body: darken(white, 1%),
+        content-bg-gradient: linear-gradient(to bottom,#382f59 220px, darken(white, 1%) 220px),
+        wallet: lighten(#382f59, 20%),
+        sidebar: darken(white, 4%),
+        thumbnailbg: lighten(black, 1%),
+
+        /* Text Colors & Theme Settings Mostly */
+        text: #120f1c,
+        text-opposite: white,
+        border: darken(white, 2.5%),
+        shadow: rgba(17, 51, 83, 0.02) 0 4px 12px 0,
+        gamelabel: darken(white, 5%),
+        link: #120f1c,
+        link-hover: black,
+        input: #f0f3f6,
+        green: #27ae60,
+        red: #e74c3c,
+        violet: #d31d6e,
+        textInverted: white,
+
+        /* Ribbons (above chat and on daily free spin) */
+        ribbon-bg-base: #fe2977,
+        ribbon-text-base: #f1f1f1,
+
+        /* Buttons */
+        button-primary-text: #f1f1f1,
+        button-primary-text-hover: black,
+        button-primary-bg: #fe2977,
+        button-primary-bg-hover: #2feae5,
+        button-primary-border-radius: 2px solid #0000006e,
+        button-primary-border-radius-hover: 2px solid #0000006e,
+        button-secondary-text: black,
+        button-secondary-text-hover: black,
+        button-secondary-bg: darken(white, 10.5%),
+        button-secondary-bg-hover: lighten(#2feae5, 10.5%),
+        button-carousel-text: #f1f1f1,
+        button-carousel-text-hover: white,
+        button-carousel-bg: #fe2977,
+        button-carousel-bg-hover: darken(#fe2977, 10.5%),
+
+        selectorArrow: url("data:image/svg+xml;utf8,<svg fill='black' height='34' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>")
+    ),
+    dark: (
+        name: 'dark',
+        header: darken(#131516, 2.5%), 
+        header-top-bg: darken(#131516, 2.5%),
+        header-top-color: #f1f1f1,
+
+        logo: url('https://games.cdn4.dk/davidkohen_meta/preloader_logo_svg.svg?h=50&w=500'),
+        body: lighten(#131516, 3.5%),
+
+        content-bg-gradient: linear-gradient(to bottom,darken(#131516, 2.5%) 220px, lighten(#131516, 3.5%) 220px),
+
+        thumbnailbg: black,
+
+        secondary: #fbbe26,
+        secondary-alternative: #fbbe26,
+
+        border: lighten(#131516, 0.5%),
+        shadow: rgba(17, 51, 83, 0.05) 0 4px 12px 0,
+        wallet: darken(#131516, 1.5%),
+        text: white,
+        text-opposite: black,
+        sidebar: darken(#131516, 2.5%),
+        gamelabel: darken(#131516, 20%),
+        link: #a8a8a8,
+        link-active: white,
+        link-hover: #fbbe26,
+        input: darken(#131516, 1%),
+        green: #2ecc71,
+        red: #e74c3c,
+        violet: #d31d6e,
+        textInverted: black,
+
+        /* Ribbons (above chat and on daily free spin) */
+        ribbon-bg-base: #fbbe26,
+        ribbon-text-base: #141414,
+
+        /* Buttons */
+        button-primary-text: #141414,
+        button-primary-text-hover: #141414,
+        button-primary-bg: #fbbe26,
+        button-primary-bg-hover: #dfba5e,
+        button-primary-border-radius: 2px solid #0000006e,
+        button-primary-border-radius-hover: 2px solid #0000006e,
+        button-secondary-text: #f1f1f1,
+        button-secondary-text-hover: #f1f1f1,
+        button-secondary-bg: darken(#1c1f21, 1%),
+        button-secondary-bg-hover: lighten(#1c1f21, 3.5%),
+        button-carousel-text: #f1f1f1,
+        button-carousel-text-hover: #f1f1f1,
+        button-carousel-bg: #1c1f21,
+        button-carousel-bg-hover: lighten(#1c1f21, 7.5%), 
+
+
+        selectorArrow: url("data:image/svg+xml;utf8,<svg fill='white' height='34' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>")
+    )
+);
+@import url('//cloud.typenetwork.com/projects/6217/fontface.css/');
+
+$container-max-widths: (
+    md: 720px,
+    lg: 960px,
+    xl: 1450px
+);
+
+$inner-content-max-width: 1455px;
+$inner-content-margin: auto;
+
+$header-margin: unset;
+$header-max-width: unset;
+
+$header-inner-margin: auto;
+$header-inner-max-width: 1455px;
+$header-position: sticky;
+
+$carousel-max-width: 1400px;
+$carousel-font-family: 'Proxima Soft Ex Bd';
+$carousel-font-size: 1.5em;
+$carousel-font-lineheight: 1.8;
+$carousel-description-width: 25vw;
+$carousel-description-min-width: 350px;
+$button-carousel-border-radius: 16px;
+$button-carousel-transition: all 0.3s ease;
+$button-carousel-sans-serif: 'Proxima Soft Ex Bd', sans-serif;
+$button-carousel-fontsize: 15px;
+
+
+
+
+$button-primary-border-radius: 7px;
+$button-primary-transition: all 0.2s ease;
+$button-secondary-border-radius: 14px;
+$button-secondary-transition: all 0.2s ease;
+$button-family-sans-serif: 'Proxima Soft Semi Bd', sans-serif;
+$button-fontsize: 13px;
+$button-letter-spacing: 0.4px;
+
+$livefeed-base-fontsize: 0.82rem;
+$livefeed-base-fontweight: 500;
+$livefeed-name-fontsize: 0.82rem;
+
+$font-base-weight: 500;
+
+$font-family-sans-serif: 'Proxima Soft Med', sans-serif;
+$font-size-base: 0.85rem; 
+$line-height-base: 1.5;
+$body-letterspacing: 0.11px;
+
+$input-btn-focus-box-shadow: none;
+$btn-focus-box-shadow: none;
+$input-btn-focus-width: 0;
+
+$sidebar-width: 55px;
+$header-height: 70px;
+$chat-width: 250px;
+
+
+@mixin themed() {
+    @each $theme, $map in $themes {
+        .theme--#{$theme} & {
+            $theme-map: () !global;
+            @each $key, $submap in $map {
+                $value: map-get(map-get($themes, $theme), '#{$key}');
+                $theme-map: map-merge($theme-map, ($key: $value)) !global;
+            }
+            @content;
+            $theme-map: null !global;
+        }
+    }
+}
+
+@function themed_url($url, $extension) {
+    //noinspection SassScssUnresolvedVariable
+    @return url($url + '.' + map_get($theme_map, 'name') + '.' + $extension);
+}
+
+@function t($key) {
+    //noinspection SassScssUnresolvedVariable
+    @return map-get($theme-map, $key);
+}

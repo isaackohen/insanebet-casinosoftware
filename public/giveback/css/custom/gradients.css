@@ -1,0 +1,155 @@
+/* ==================================================================
+Template Specific Styles (Custom CSS here)
+================================================================== */
+
+/*	Template Promo(Gradient Mixed)
+-------------------------------------------------------------- */
+
+/* Set Font Family to teaser */
+body {
+    font-family: 'Dosis', sans-serif;
+    background: rgba(72,85,99,1);
+    background: -moz-linear-gradient(left, rgba(72,85,99,1) 0%, rgba(41,50,60,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(72,85,99,1)), color-stop(100%, rgba(41,50,60,1)));
+    background: -webkit-linear-gradient(left, rgba(72,85,99,1) 0%, rgba(41,50,60,1) 100%);
+    background: -o-linear-gradient(left, rgba(72,85,99,1) 0%, rgba(41,50,60,1) 100%);
+    background: -ms-linear-gradient(left, rgba(72,85,99,1) 0%, rgba(41,50,60,1) 100%);
+    background: linear-gradient(to right, rgba(72,85,99,1) 0%, rgba(41,50,60,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#485563', endColorstr='#29323c', GradientType=1 );
+}
+
+#templatepromo {
+    background: none transparent;
+    text-transform: uppercase;
+}
+
+#templatepromo h1 {
+    -webkit-text-stroke: 0px;
+}
+
+/* Main Text */
+#templatepromo .lt-main {
+    font-weight: 700;
+    font-size: 1.75em;
+}
+
+/* Sub Text */
+#templatepromo .lt-sub {
+    color: #fff;
+}
+
+/* Sub Text Background Box Color */
+#templatepromo .lt-boxed {
+    background: none transparent;
+}
+
+/* Gradients for each scene */
+#templatepromo #scene-1, .loader-container {
+    background: none transparent;
+}
+
+#templatepromo #scene-2 {
+    background: rgba(19,106,138,1);
+    background: -moz-linear-gradient(left, rgba(19,106,138,1) 0%, rgba(38,120,113,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(19,106,138,1)), color-stop(100%, rgba(38,120,113,1)));
+    background: -webkit-linear-gradient(left, rgba(19,106,138,1) 0%, rgba(38,120,113,1) 100%);
+    background: -o-linear-gradient(left, rgba(19,106,138,1) 0%, rgba(38,120,113,1) 100%);
+    background: -ms-linear-gradient(left, rgba(19,106,138,1) 0%, rgba(38,120,113,1) 100%);
+    background: linear-gradient(to right, rgba(19,106,138,1) 0%, rgba(38,120,113,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#136a8a', endColorstr='#267871', GradientType=1 );
+}
+
+#templatepromo #scene-3 {
+    background: rgba(19,78,94,1);
+    background: -moz-linear-gradient(left, rgba(19,78,94,1) 0%, rgba(113,178,128,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(19,78,94,1)), color-stop(100%, rgba(113,178,128,1)));
+    background: -webkit-linear-gradient(left, rgba(19,78,94,1) 0%, rgba(113,178,128,1) 100%);
+    background: -o-linear-gradient(left, rgba(19,78,94,1) 0%, rgba(113,178,128,1) 100%);
+    background: -ms-linear-gradient(left, rgba(19,78,94,1) 0%, rgba(113,178,128,1) 100%);
+    background: linear-gradient(to right, rgba(19,78,94,1) 0%, rgba(113,178,128,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#134e5e', endColorstr='#71b280', GradientType=1 );
+}
+
+#templatepromo #scene-4 {
+    background: rgba(92,37,141,1);
+    background: -moz-linear-gradient(left, rgba(92,37,141,1) 0%, rgba(67,137,162,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(92,37,141,1)), color-stop(100%, rgba(67,137,162,1)));
+    background: -webkit-linear-gradient(left, rgba(92,37,141,1) 0%, rgba(67,137,162,1) 100%);
+    background: -o-linear-gradient(left, rgba(92,37,141,1) 0%, rgba(67,137,162,1) 100%);
+    background: -ms-linear-gradient(left, rgba(92,37,141,1) 0%, rgba(67,137,162,1) 100%);
+    background: linear-gradient(to right, rgba(92,37,141,1) 0%, rgba(67,137,162,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5c258d', endColorstr='#4389a2', GradientType=1 );
+}
+
+#templatepromo #scene-5 {
+    background: rgba(52,143,79,1);
+    background: -moz-linear-gradient(left, rgba(52,143,79,1) 0%, rgba(86,180,211,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(52,143,79,1)), color-stop(100%, rgba(86,180,211,1)));
+    background: -webkit-linear-gradient(left, rgba(52,143,79,1) 0%, rgba(86,180,211,1) 100%);
+    background: -o-linear-gradient(left, rgba(52,143,79,1) 0%, rgba(86,180,211,1) 100%);
+    background: -ms-linear-gradient(left, rgba(52,143,79,1) 0%, rgba(86,180,211,1) 100%);
+    background: linear-gradient(to right, rgba(52,143,79,1) 0%, rgba(86,180,211,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#348f4f', endColorstr='#56b4d3', GradientType=1 );
+}
+
+#templatepromo #scene-6, #templatepromo #scene-7 {
+    background: rgba(67,137,162,1);
+    background: -moz-linear-gradient(left, rgba(67,137,162,1) 0%, rgba(28,216,210,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(67,137,162,1)), color-stop(100%, rgba(28,216,210,1)));
+    background: -webkit-linear-gradient(left, rgba(67,137,162,1) 0%, rgba(28,216,210,1) 100%);
+    background: -o-linear-gradient(left, rgba(67,137,162,1) 0%, rgba(28,216,210,1) 100%);
+    background: -ms-linear-gradient(left, rgba(67,137,162,1) 0%, rgba(28,216,210,1) 100%);
+    background: linear-gradient(to right, rgba(67,137,162,1) 0%, rgba(28,216,210,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4389a2', endColorstr='#1cd8d2', GradientType=1 );
+}
+
+.sk-three-bounce .sk-child, .sk-spinner-pulse, .sk-double-bounce .sk-child, /* Preloader Color */
+.video-play-button:before, .video-play-button:after, /* "GO" button color */
+.sven-info .btn:after /* "Subscribe" button on footer */
+{
+    background: none #fff;
+}
+
+.video-play-button span {
+    color: #E7464F;
+}
+
+.sven-info, .sven-timer {
+    font-family: 'Dosis', sans-serif;
+}
+
+.sven-info .btn:hover {
+    color: #E7464F;
+}
+
+.bt-container {
+    opacity: 0.3;
+}
+
+/* ==================================================================
+Responsive styles
+================================================================== */
+
+/* Small Devices, Tablets
+-------------------------------------------------------------- */
+@media only screen and (min-width : 768px) {
+    #templatepromo .lt-main {
+        font-size: 2.75em;
+    }
+}
+
+/* Medium Devices, Desktops, Laptops
+-------------------------------------------------------------- */
+@media only screen and (min-width : 1224px) {
+    #templatepromo .lt-main {
+        font-size: 3.75em;
+    }
+}
+
+/* Large Devices, Wide Screens
+-------------------------------------------------------------- */
+@media only screen and (min-width : 1824px) {
+    #templatepromo .lt-main {
+        font-size: 5em;
+    }
+}

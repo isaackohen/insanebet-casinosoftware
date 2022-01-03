@@ -1,0 +1,202 @@
+$themes: (
+    default: (
+        name: 'light',
+        header: darken(white, 2.5%),
+        header-top-bg: #382f59,
+        header-top-color: #f1f1f1,
+        logo: url('https://cdn2.davidkohen.com/v1/insanebet/logo-white-2.png'),
+
+        /* Main Theme Accent Colors */
+        secondary: #fe2977,
+        secondary-alternative: #fe2977,
+
+        /* Backgrounds for Tables/Containers */
+        body: darken(white, 1%),
+        content-bg-gradient: linear-gradient(to bottom,#382f59 220px, darken(white, 1%) 220px),
+        wallet: lighten(#382f59, 20%),
+        sidebar: darken(white, 4%),
+        thumbnailbg: lighten(black, 1%),
+
+        background-gradient-webkit: -webkit-linear-gradient(to right, darken(white, 1.2%), darken(white, 1.85%)),
+        background-gradient: linear-gradient(to right, darken(white, 1.2%), darken(white, 1.85%)),
+
+        /* Text Colors & Theme Settings Mostly */
+        text: #120f1c,
+        text-opposite: white,
+        border: darken(white, 2.5%),
+        shadow: rgba(17, 51, 83, 0.02) 0 4px 12px 0,
+        gamelabel: darken(white, 5%),
+        link: #120f1c,
+        link-hover: black,
+        input: #f0f3f6,
+        green: #27ae60,
+        red: #e74c3c,
+        violet: #d31d6e,
+        textInverted: white,
+
+        /* Ribbons (above chat and on daily free spin) */
+        ribbon-bg-base: #fe2977,
+        ribbon-text-base: #f1f1f1,
+
+        /* Buttons */
+        button-primary-text: #f1f1f1,
+        button-primary-text-hover: black,
+        button-primary-bg: #fe2977,
+        button-primary-bg-hover: #2feae5,
+        button-primary-border-radius: 2px solid #0000006e,
+        button-primary-border-radius-hover: 2px solid #0000006e,
+        button-secondary-text: black,
+        button-secondary-text-hover: black,
+        button-secondary-bg: darken(white, 10.5%),
+        button-secondary-bg-hover: lighten(#2feae5, 10.5%),
+        button-carousel-text: #f1f1f1,
+        button-carousel-text-hover: white,
+        button-carousel-bg: #fe2977,
+        button-carousel-bg-hover: darken(#fe2977, 10.5%),
+
+        selectorArrow: url("data:image/svg+xml;utf8,<svg fill='black' height='34' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>")
+    ),
+    dark: (
+        name: 'dark',
+        header: darken(#363938, 1.5%), 
+        header-top-bg: darken(#363938, 1.5%),
+        header-top-color: #f1f1f1,
+
+        logo: url('https://cdn2.davidkohen.com/v1/insanebet/logo-white-2.png'),
+        body: lighten(#232526, 3.5%),
+
+        content-bg-gradient: linear-gradient(to bottom,darken(#363938, 1.5%) 220px, lighten(#363938, 2.5%) 220px),
+
+        thumbnailbg: black,
+
+        background-gradient-webkit: -webkit-linear-gradient(to right, darken(#363938, 1.2%), darken(#363938, 1.85%)),
+        background-gradient: linear-gradient(to right, darken(#363938, 1.2%), darken(#363938, 1.85%)),
+
+
+        secondary: #fab908,
+        secondary-alternative: #fab908,
+
+        border: lighten(#363938, 0.5%),
+        shadow: rgba(17, 51, 83, 0.05) 0 4px 12px 0,
+        wallet: darken(#363938, 1.5%),
+        text: white,
+        text-opposite: black,
+        sidebar: darken(#363938, 2.5%),
+        gamelabel: darken(#363938, 20%),
+        link: #a8a8a8,
+        link-active: white,
+        link-hover: #fab908,
+        input: darken(#363938, 1%),
+        green: #2ecc71,
+        red: #e74c3c,
+        violet: #d31d6e,
+        textInverted: black,
+
+        /* Ribbons (above chat and on daily free spin) */
+        ribbon-bg-base: #fab908,
+        ribbon-text-base: #141414,
+
+        /* Buttons */
+        button-primary-text: #141414,
+        button-primary-text-hover: #141414,
+        button-primary-bg: #fab908,
+        button-primary-bg-hover: #d9a417,
+        button-primary-border-radius: 2px solid #0000006e,
+        button-primary-border-radius-hover: 2px solid #0000006e,
+        button-secondary-text: #f1f1f1,
+        button-secondary-text-hover: #f1f1f1,
+        button-secondary-bg: darken(#1c1f21, 1%),
+        button-secondary-bg-hover: lighten(#1c1f21, 3.5%),
+        button-carousel-text: #f1f1f1,
+        button-carousel-text-hover: #f1f1f1,
+        button-carousel-bg: #1c1f21,
+        button-carousel-bg-hover: lighten(#1c1f21, 7.5%), 
+
+
+        selectorArrow: url("data:image/svg+xml;utf8,<svg fill='white' height='34' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>")
+    )
+);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+$container-max-widths: (
+    md: 720px,
+    lg: 960px,
+    xl: 1450px
+);
+
+$inner-content-max-width: 1455px;
+$inner-content-margin: auto;
+
+$header-margin: unset;
+$header-max-width: unset;
+
+$header-inner-margin: auto;
+$header-inner-max-width: 1900x;
+$header-position: sticky;
+
+$carousel-max-width: 1365px;
+$carousel-font-family: 'Poppins';
+$carousel-font-size: 1.5em;
+$carousel-font-lineheight: 1.8;
+$carousel-description-width: 25vw;
+$carousel-description-min-width: 350px;
+$button-carousel-border-radius: 16px;
+$button-carousel-transition: all 0.3s ease;
+$button-carousel-sans-serif: 'Poppins', sans-serif;
+$button-carousel-fontsize: 15px;
+
+
+$button-primary-border-radius: 11px;
+$button-primary-transition: all 0.2s ease;
+$button-secondary-border-radius: 14px;
+$button-secondary-transition: all 0.2s ease;
+$button-family-sans-serif: 'Poppins', sans-serif;
+$button-fontsize: 12px;
+$button-letter-spacing: 0.2px;
+$button-font-weight: 500;
+
+$livefeed-base-fontsize: 0.82rem;
+$livefeed-base-fontweight: 400;
+$livefeed-name-fontsize: 0.82rem;
+
+$font-base-weight: 500;
+
+$font-family-sans-serif: 'Poppins', sans-serif;
+$font-size-base: 0.82rem; 
+$line-height-base: 1.4;
+$body-letterspacing: 0.08px;
+
+$input-btn-focus-box-shadow: none;
+$btn-focus-box-shadow: none;
+$input-btn-focus-width: 0;
+
+$sidebar-width: 55px;
+$sidebar-width-expanded: 155px;
+
+$header-height: 70px;
+$chat-width: 250px;
+
+
+@mixin themed() {
+    @each $theme, $map in $themes {
+        .theme--#{$theme} & {
+            $theme-map: () !global;
+            @each $key, $submap in $map {
+                $value: map-get(map-get($themes, $theme), '#{$key}');
+                $theme-map: map-merge($theme-map, ($key: $value)) !global;
+            }
+            @content;
+            $theme-map: null !global;
+        }
+    }
+}
+
+@function themed_url($url, $extension) {
+    //noinspection SassScssUnresolvedVariable
+    @return url($url + '.' + map_get($theme_map, 'name') + '.' + $extension);
+}
+
+@function t($key) {
+    //noinspection SassScssUnresolvedVariable
+    @return map-get($theme-map, $key);
+}

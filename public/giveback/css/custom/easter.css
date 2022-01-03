@@ -1,0 +1,172 @@
+/* ==================================================================
+Template Specific Styles (Custom CSS here)
+================================================================== */
+
+/* Easter Wishes(Youtube Background)
+-------------------------------------------------------------- */
+
+/* Set Font Family to teaser */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#easter {
+    background: none transparent;
+    text-transform: uppercase;
+}
+
+#easter h1 {
+    -webkit-text-stroke: 0px;
+}
+
+/* Main Text */
+#easter .lt-main {
+    font-weight: 300;
+    font-size: 0.875em;
+    letter-spacing: 1px;
+    line-height: 1.5em;
+}
+
+/* Sub Text */
+#easter .lt-sub {
+    font-weight: 600;
+    font-size: 0.75em;
+    color: #fff;
+}
+
+#easter .lt-sub a {
+    color: #fff !important;
+}
+
+/* Sub Text Background Box Color */
+#easter .lt-boxed {
+    background: none transparent;
+}
+
+/* Overwrite styles of scene-7 */
+#easter #scene-7 .lt-main {
+    font-size: 1.75em;
+    font-weight: 300;
+}
+
+#easter #scene-7 .lt-sub {
+    font-size: 1.5em;
+    margin-top: 12px;
+}
+
+#easter .hashtag a {
+    border: 1px solid white;
+    padding: 6px;
+    border-radius: 2px;
+    letter-spacing: 1px;
+    font-weight: 600 !important;
+    font-size: 0.875em;
+}
+
+
+.sk-three-bounce .sk-child, .sk-spinner-pulse, .sk-double-bounce .sk-child, /* Preloader Color */
+.video-play-button:before, .video-play-button:after, /* "GO" button BG */
+.sven-info .btn:after /* "Subscribe" button on footer */
+{
+    background: none #ff1f34;
+}
+
+.sven-info {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.sven-info .btn {
+    font-weight: 600;
+}
+
+/* ==================================================================
+Responsive styles
+================================================================== */
+
+/* Small Devices, Tablets
+-------------------------------------------------------------- */
+@media only screen and (min-width : 768px) {
+
+    #easter .lt-main {
+        font-size: 1.125em;
+    }
+
+    #easter .lt-sub {
+        font-size: 0.75em;
+    }
+
+    #easter #scene-7 .lt-main {
+        font-size: 2.5em;
+        font-weight: 300;
+    }
+
+    #easter #scene-7 .lt-sub {
+        font-size: 1.75em;
+        margin-top: 12px;
+    }
+
+    #easter .hashtag a {
+        border: 2px solid white;
+        font-size: 0.75em;
+        padding: 8px;
+    }
+
+}
+
+/* Medium Devices, Desktops, Laptops
+-------------------------------------------------------------- */
+@media only screen and (min-width : 1224px) {
+
+    #easter .lt-main {
+        font-size: 1.5em;
+    }
+
+    #easter .lt-sub {
+        font-size: 1em;
+    }
+
+    #easter #scene-7 .lt-main {
+        font-size: 3.5em;
+        font-weight: 300;
+    }
+
+    #easter #scene-7 .lt-sub {
+        font-size: 2.813em;
+        margin-top: 16px;
+    }
+
+    #easter .hashtag a {
+        border: 2px solid white;
+        padding: 8px;
+    }
+
+}
+
+/* Large Devices, Wide Screens
+-------------------------------------------------------------- */
+@media only screen and (min-width : 1824px) {
+
+    #easter .lt-main {
+        font-size: 1.75em;
+    }
+
+    #easter .lt-sub {
+        font-size: 1.25em;
+    }
+
+    #easter #scene-7 .lt-main {
+        font-size: 4em;
+        font-weight: 300;
+    }
+
+    #easter #scene-7 .lt-sub {
+        font-size: 3.25em;
+        margin-top: 16px;
+    }
+
+    #easter .hashtag a {
+        border: 2px solid white;
+        padding: 14px;
+    }
+
+}

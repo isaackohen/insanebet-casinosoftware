@@ -1,0 +1,60 @@
+/* ==================================================================
+Template Specific Styles (Custom CSS here)
+================================================================== */
+
+/*	Travel(HTML5 Video)
+-------------------------------------------------------------- */
+#travel .lt-boxed, /* Sub Text Background Box Color */
+.sven-form .btn,    /* "get notified" button Color */
+.sk-three-bounce .sk-child, .sk-spinner-pulse, .sk-double-bounce .sk-child, /* Preloader Color */
+.video-play-button:before, .video-play-button:after, /* "GO" button color */
+.coming-soon .btn, /* "Subscribe" button on lt-sub */
+.sven-info .btn:after /* "Subscribe" button on footer */
+{
+    background: none #60d8ff;
+}
+
+/* Subscribe button border and background */
+.coming-soon .btn {
+	color: #000;
+}
+
+.sven-info, .sven-timer {
+    font-family: 'Exo', sans-serif;
+}
+
+.sven-timer {
+    font-weight: 300;
+}
+
+.bt-wrapper {
+    width: 74%;
+    text-transform: uppercase;
+}
+
+.bt-container {
+    opacity: 0.3;
+}
+
+
+/* ==================================================================
+Responsive styles
+================================================================== */
+
+/* Small Devices, Tablets
+-------------------------------------------------------------- */
+@media only screen and (min-width : 768px) {
+	.bt-wrapper {
+        width: 36%;
+    }
+}
+
+/* Medium Devices, Desktops, Laptops
+-------------------------------------------------------------- */
+@media only screen and (min-width : 1224px) {
+}
+
+/* Large Devices, Wide Screens
+-------------------------------------------------------------- */
+@media only screen and (min-width : 1824px) {
+}
