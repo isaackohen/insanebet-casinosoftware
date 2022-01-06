@@ -4,6 +4,7 @@
         <title><?php echo e(env('APP_PAGETITLE') ?? 'Casino'); ?></title>
         <link rel="preload" href="//cloud.typenetwork.com/projectLicenseWeb/30902/fontfile/woff2/?af47772613a89645788565556fc92ac5b5e40c5b" as="font" type="font/woff2" crossorigin>
         <meta charset="utf-8">
+        <link href="https://unpkg.com/video.js/dist/video-js.css" rel="stylesheet">
 
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, height=device-height, minimum-scale=1, maximum-scale=1, user-scalable=no">
         <meta name="csrf-token" content="<?php echo e(csrf_token()); ?>">

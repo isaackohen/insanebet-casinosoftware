@@ -7,7 +7,6 @@ use App\Currency\Currency;
 use App\Events\LiveFeedGame;
 use App\Game;
 use App\BonusBattles;
-
 use App\Gameslist;
 use App\Leaderboard;
 use App\Settings;
@@ -26,10 +25,42 @@ use App\Events\UserNotification;
 use App\Events\BonusBattleWrongBet;
 
 
-
-
 class ExternalController
 {
+
+    public function warElementsCallback(Request $request)
+    {
+        $data = $request->all();
+        if($data['status'] == 'Opened'){
+            $game = \App\Games\Kernel\Game::find('warofelements');
+            $game->NextGameLive();
+            $game->state()->pushData(['url' => $data['videoUrl']['hls'], 'event' => $data['eventId']]);
+        }
+        if($data['status'] == 'Closed'){
+            $game = \App\Games\Kernel\Game::find('warofelements');
+            $game->DisableBetAcceptingGameLive();
+            $game->state()->pushData(['event' => $data['eventId']]);
+        }
+        if($data['status'] == 'Drawing'){
+            $game = \App\Games\Kernel\Game::find('warofelements');
+            $game->state()->pushData(['event' => $data['eventId']]);
+        }
+        if($data['status'] == 'Completed'){
+            $game = \App\Games\Kernel\Game::find('warofelements');
+            $game->state()->pushData(
+                [
+                    'result' => [
+                        'dealer' => $data['result']['dealer'],
+                        'player' => $data['result']['player']
+                    ]
+                ]
+            );
+            $game->FinishGameLive();
+        }
+        return [];
+    }
+    
+
     public function methodBalance(Request $request)
     {
         Log::alert($request->fullUrl());

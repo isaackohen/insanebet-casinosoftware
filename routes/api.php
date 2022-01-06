@@ -16,8 +16,10 @@ use App\Http\Controllers\Api\WalletController;
 use Illuminate\Support\Facades\Route;
 
 
+
 Route::any('/payment', [PaymentsController::class, 'paymentStatus']);
 Route::prefix('callback')->group(function () {
+    Route::post('/warelements', [ExternalController::class, 'warElementsCallback']);
     Route::post('/nowpayments/withdrawals', [PaymentsController::class, 'withdrawalsNowpaymentsCallback']);
     Route::post('/nowpayments', [PaymentsController::class, 'depositNowpaymentsCallback']);
     Route::any('/chaingateway', [PaymentsController::class, 'depositChaingateway']);

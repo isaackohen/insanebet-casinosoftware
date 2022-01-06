@@ -8,9 +8,9 @@ mix.extend('addWebpackLoaders', (webpackConfig, loaderRules) => {
 });
 
 mix.js('resources/client-js-shotsvip/app.js', 'public/js')
-mix.js('resources/admin-js/app.js', 'public/js/admin')
+//mix.js('resources/admin-js/app.js', 'public/js/admin')
     .sass('resources/sass/app.scss', 'public/css')
-.sass('resources/sass/admin/app.scss', 'public/css/admin')
+//.sass('resources/sass/admin/app.scss', 'public/css/admin')
     .sass('resources/sass/error.scss', 'public/css')
     .copy('resources/img-shotsvip', 'public/img')
     .copy('resources/sounds-shotsvip', 'public/sounds')

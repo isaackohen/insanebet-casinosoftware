@@ -84,13 +84,13 @@ abstract class Game
     {
         return [
             //new \App\Games\BullBear(),
-            new \App\Games\Baccarat(),
-            new \App\Games\Dice(),
+            //new \App\Games\Baccarat(),
+            //new \App\Games\Dice(),
             //new \App\Games\Mines(),
-            new \App\Games\Wheel(),
+            //new \App\Games\Wheel(),
             //new \App\Games\Plinko(),
             //new \App\Games\Coinflip(),
-            //new \App\Games\Tower(),
+            //new \App\Games\WarElements(),
             //new \App\Games\Keno(),
             //new \App\Games\Stairs(),
             //new \App\Games\Blackjack(),

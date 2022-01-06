@@ -5,12 +5,6 @@
   */
 
 /*!
-  * vue-router v3.5.3
-  * (c) 2021 Evan You
-  * @license MIT
-  */
-
-/*!
   Copyright (c) 2016 Jed Watson.
   Licensed under the MIT License (MIT), see
   http://jedwatson.github.io/classnames
@@ -81,6 +75,10 @@
  *
  * Released under the MIT license.
  * Date: 02.08.2020
+ */
+
+/*!
+ * Programatically add the following
  */
 
 /*!
@@ -186,12 +184,6 @@
  * Released under the MIT license
  *
  * Date: 2020-11-14T03:59:33.666Z
- */
-
-/*!
- * vue-i18n v8.26.7 
- * (c) 2021 kazuya kawaguchi
- * Released under the MIT License.
  */
 
 /*!
@@ -370,6 +362,12 @@ PERFORMANCE OF THIS SOFTWARE.
 /*! ./to-svg */
 
 /*! /home/travis/build/feathericons/feather/src/index.js */
+
+/*! @name @videojs/http-streaming @version 2.12.0 @license Apache-2.0 */
+
+/*! @name aes-decrypter @version 3.1.2 @license Apache-2.0 */
+
+/*! @name pkcs7 @version 1.0.4 @license Apache-2.0 */
 
 /*! classnames/dedupe */
 
@@ -718,6 +716,12 @@ PERFORMANCE OF THIS SOFTWARE.
 /*!*******************************************************************************!*\
   !*** ./node_modules/core-js/internals/validate-set-prototype-of-arguments.js ***!
   \*******************************************************************************/
+
+/**
+  * Hopper 0.3.4
+  * (c) 2019
+    * @license MIT
+    */
 
 /**
  * @license
