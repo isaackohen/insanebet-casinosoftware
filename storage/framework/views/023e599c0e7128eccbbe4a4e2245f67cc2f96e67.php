@@ -1,2 +1,0 @@
-<?php echo $__env->make('errors.error', ['code' => 500], \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
-<?php /**PATH /home/ploi/insane.bet/resources/views/errors/500.blade.php ENDPATH**/ ?>

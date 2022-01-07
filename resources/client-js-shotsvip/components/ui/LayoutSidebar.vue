@@ -229,7 +229,7 @@
 			
 			.main-header {
 				padding: 15px;
-				font-size: 12px;
+				font-size: 13px;
 				@include themed() {
 					color: rgba(t('text'), .8);
 				}

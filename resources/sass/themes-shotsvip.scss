@@ -7,8 +7,8 @@ $themes: (
         logo: url('https://cdn2.davidkohen.com/v1/insanebet/logo-white-2.png'),
 
         /* Main Theme Accent Colors */
-        secondary: #fe2977,
-        secondary-alternative: #fe2977,
+        secondary: #3347ff,
+        secondary-alternative: #3347ff,
 
         /* Backgrounds for Tables/Containers */
         body: darken(white, 1%),
@@ -72,7 +72,6 @@ $themes: (
         background-gradient-webkit: -webkit-linear-gradient(to right, darken(#363938, 1.2%), darken(#363938, 1.85%)),
         background-gradient: linear-gradient(to right, darken(#363938, 1.2%), darken(#363938, 1.85%)),
 
-
         secondary: #fab908,
         secondary-alternative: #fab908,
 
@@ -116,8 +115,7 @@ $themes: (
         selectorArrow: url("data:image/svg+xml;utf8,<svg fill='white' height='34' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>")
     )
 );
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 $container-max-widths: (
     md: 720px,
     lg: 960px,
@@ -135,14 +133,14 @@ $header-inner-max-width: 1900x;
 $header-position: sticky;
 
 $carousel-max-width: 1365px;
-$carousel-font-family: 'Poppins';
+$carousel-font-family: Quicksand, "Roboto Mono", "Open Sans", "PingFang SC", sans-serif, 微软雅黑, "Microsoft Yahei", 宋体, Helvetica, Arial, simsun;
 $carousel-font-size: 1.5em;
 $carousel-font-lineheight: 1.8;
 $carousel-description-width: 25vw;
 $carousel-description-min-width: 350px;
 $button-carousel-border-radius: 16px;
 $button-carousel-transition: all 0.3s ease;
-$button-carousel-sans-serif: 'Poppins', sans-serif;
+$button-carousel-sans-serif: Quicksand, "Roboto Mono", "Open Sans", "PingFang SC", sans-serif, 微软雅黑, "Microsoft Yahei", 宋体, Helvetica, Arial, simsun;
 $button-carousel-fontsize: 15px;
 
 
@@ -150,21 +148,21 @@ $button-primary-border-radius: 11px;
 $button-primary-transition: all 0.2s ease;
 $button-secondary-border-radius: 14px;
 $button-secondary-transition: all 0.2s ease;
-$button-family-sans-serif: 'Poppins', sans-serif;
+$button-family-sans-serif: Quicksand, "Roboto Mono", "Open Sans", "PingFang SC", sans-serif, 微软雅黑, "Microsoft Yahei", 宋体, Helvetica, Arial, simsun;
 $button-fontsize: 12px;
 $button-letter-spacing: 0.2px;
-$button-font-weight: 500;
+$button-font-weight: 600;
 
-$livefeed-base-fontsize: 0.82rem;
-$livefeed-base-fontweight: 400;
-$livefeed-name-fontsize: 0.82rem;
+$livefeed-base-fontsize: 0.88rem;
+$livefeed-base-fontweight: 600;
+$livefeed-name-fontsize: 0.88rem;
 
-$font-base-weight: 500;
+$font-base-weight: 600;
 
-$font-family-sans-serif: 'Poppins', sans-serif;
-$font-size-base: 0.82rem; 
-$line-height-base: 1.4;
-$body-letterspacing: 0.08px;
+$font-family-sans-serif: Quicksand, "Roboto Mono", "Open Sans", "PingFang SC", sans-serif, 微软雅黑, "Microsoft Yahei", 宋体, Helvetica, Arial, simsun;
+$font-size-base: 0.88rem; 
+$line-height-base: 1.5;
+$body-letterspacing: 0.05px;
 
 $input-btn-focus-box-shadow: none;
 $btn-focus-box-shadow: none;

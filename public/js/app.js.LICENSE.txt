@@ -39,26 +39,6 @@
  */
 
 /*!
- * CSSPlugin 3.8.0
- * https://greensock.com
- *
- * Copyright 2008-2021, GreenSock. All rights reserved.
- * Subject to the terms at https://greensock.com/standard-license or for
- * Club GreenSock members, the agreement issued with that membership.
- * @author: Jack Doyle, jack@greensock.com
-*/
-
-/*!
- * GSAP 3.8.0
- * https://greensock.com
- *
- * @license Copyright 2008-2021, GreenSock. All rights reserved.
- * Subject to the terms at https://greensock.com/standard-license or for
- * Club GreenSock members, the agreement issued with that membership.
- * @author: Jack Doyle, jack@greensock.com
-*/
-
-/*!
  * Glide.js v3.5.1
  * (c) 2013-2021 Jędrzej Chałubek (https://github.com/jedrzejchalubek/)
  * Released under the MIT License.
@@ -75,10 +55,6 @@
  *
  * Released under the MIT license.
  * Date: 02.08.2020
- */
-
-/*!
- * Programatically add the following
  */
 
 /*!
@@ -117,53 +93,6 @@
  * https://jquery.org/license
  *
  * Date: 2021-03-02T17:08Z
- */
-
-/*!
- * jQuery UI Keycode 1.13.0
- * http://jqueryui.com
- *
- * Copyright jQuery Foundation and other contributors
- * Released under the MIT license.
- * http://jquery.org/license
- */
-
-/*!
- * jQuery UI Mouse 1.13.0
- * http://jqueryui.com
- *
- * Copyright jQuery Foundation and other contributors
- * Released under the MIT license.
- * http://jquery.org/license
- */
-
-/*!
- * jQuery UI Slider 1.13.0
- * http://jqueryui.com
- *
- * Copyright jQuery Foundation and other contributors
- * Released under the MIT license.
- * http://jquery.org/license
- */
-
-/*!
- * jQuery UI Touch Punch 0.2.3
- *
- * Copyright 2011–2014, Dave Furfero
- * Dual licensed under the MIT or GPL Version 2 licenses.
- *
- * Depends:
- *  jquery.ui.widget.js
- *  jquery.ui.mouse.js
- */
-
-/*!
- * jQuery UI Widget 1.13.0
- * http://jqueryui.com
- *
- * Copyright jQuery Foundation and other contributors
- * Released under the MIT license.
- * http://jquery.org/license
  */
 
 /*!
@@ -362,12 +291,6 @@ PERFORMANCE OF THIS SOFTWARE.
 /*! ./to-svg */
 
 /*! /home/travis/build/feathericons/feather/src/index.js */
-
-/*! @name @videojs/http-streaming @version 2.12.0 @license Apache-2.0 */
-
-/*! @name aes-decrypter @version 3.1.2 @license Apache-2.0 */
-
-/*! @name pkcs7 @version 1.0.4 @license Apache-2.0 */
 
 /*! classnames/dedupe */
 

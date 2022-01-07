@@ -2,12 +2,14 @@
 <html>
     <head>
         <title>{{ env('APP_PAGETITLE') ?? 'Casino' }}</title>
-        <link rel="preload" href="//cloud.typenetwork.com/projectLicenseWeb/30902/fontfile/woff2/?af47772613a89645788565556fc92ac5b5e40c5b" as="font" type="font/woff2" crossorigin>
         <meta charset="utf-8">
-        <link href="https://unpkg.com/video.js/dist/video-js.css" rel="stylesheet">
 
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, height=device-height, minimum-scale=1, maximum-scale=1, user-scalable=no">
         <meta name="csrf-token" content="{{ csrf_token() }}">
+<link
+  href="https://unpkg.com/sanitize.css"
+  rel="stylesheet"
+/>        
         <script type="text/javascript">
             window.Layout = {
                 Frontend: '{!! base64_encode(file_get_contents(public_path('css/app.css'))) !!}'
@@ -21,6 +23,8 @@
             <meta http-equiv="Expires" content="Mon, 26 Jul 1997 05:00:00 GMT">
             <meta http-equiv="Pragma" content="no-cache">
         @endif
+
+
 
         <link rel="manifest" href="/manifest.json">
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z7HD7P5H38"></script>
